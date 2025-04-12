@@ -1,38 +1,3 @@
-// package main
-
-// import (
-// 	"fmt"
-// 	"sync"
-// )
-
-// func main() {
-// 	var wg sync.WaitGroup
-// 	ch := make(chan int, 1)
-// 	wg.Add(2)
-// 	go odd(ch, &wg)
-// 	go even(ch, &wg)
-// 	ch <- 1
-// 	wg.Wait()
-// }
-
-// func even(ch chan int, wg *sync.WaitGroup) {
-// 	defer wg.Done()
-// 	for i := 2; i <= 10; i += 2 {
-// 		<-ch
-// 		fmt.Println("Even number", i)
-// 		ch <- 1
-// 	}
-// }
-
-// func odd(ch chan int, wg *sync.WaitGroup) {
-// 	defer wg.Done()
-// 	for i := 1; i <= 10; i += 2 {
-// 		<-ch
-// 		fmt.Println("Odd number", i)
-// 		ch <- 1
-// 	}
-// }
-
 package main
 
 import "fmt"
