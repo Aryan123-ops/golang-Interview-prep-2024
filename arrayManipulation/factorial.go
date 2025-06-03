@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	// fact := Factorial(4)
 	fmt.Println(Factorial(4))
 }
 

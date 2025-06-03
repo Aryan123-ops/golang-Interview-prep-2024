@@ -21,8 +21,6 @@ func reversestringArray(arr []string) []string {
 func main() {
 	// Define an array of strings
 	strArray := []string{"abc", "banana", "cherry", "date", "pig"}
-	// strArray := []string{1, 2, 3, 4, 5, 6, 7, 8}
-	// Prstring the original array
 	fmt.Println("Original Array:", strArray)
 
 	// Reverse the array
