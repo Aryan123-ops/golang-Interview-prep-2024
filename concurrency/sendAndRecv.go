@@ -31,3 +31,27 @@ func recv(ch chan string, wg *sync.WaitGroup) {
 	fmt.Println("received message:", msg)
 
 }
+
+// Online Go compiler to run Golang program online
+// Print "Try programiz.pro" message
+
+// package main
+// import (
+//     "fmt"
+//     "time"
+// )
+// func main() {
+//   ch := make(chan int, 2)
+
+//  go func(){
+//      for i := 1; i <= 5; i++ {
+//          ch <-i
+//          fmt.Println("Sent", i)
+//          time.Sleep(500 *time.Millisecond)
+//      }
+//      close(ch)
+//  }()
+//  for v := range ch {
+//      fmt.Println("Received",v)
+//  }
+// }
